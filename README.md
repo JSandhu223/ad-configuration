@@ -25,10 +25,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+1. In the Azure portal, create two *virtual machines* for the **client** and **domain controller** under the same virtual network
+2. Configure connectivity between the virtual machines
+3. Install Active Directory on the domain controller
+4. Create users in AD
+5. Join the client to the AD domain
+6. Allow remote desktop for normal users on the client VM
+7. Create users with PowerShell
 
 <h2>Deployment and Configuration Steps</h2>
 
