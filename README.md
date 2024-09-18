@@ -62,5 +62,3 @@ Now, if we go back to our client and ping the domain controller, we should see t
 <img src="images/Client_SuccessfulPing.png" height="75%" width="75%" />
 
 <h3>Step 3 - Install Active Directory</h3>
-
-The a
