@@ -53,7 +53,7 @@ If we remote connect into the client and try pinging the domain controller, we'l
 
 <img src="images/Client_FailedPing.png" height="75%" width="75%" />
 
-This is because the domain controller firewall is blocking ICMP traffic. We can log in to the domain controller and simply enable ICMPv4 in the firewall settings. Just navigate to `Control Panel > All Control Panel Items > Windows Defender Firewall > Advanced Settings > Inbound Rules`, sort by protocol, and enable these two rules for ICMPv4.
+This is because the domain controller firewall is blocking ICMP traffic. We can log in to the domain controller and simply enable ICMPv4 in the firewall settings. Just navigate to `Control Panel > Windows Defender Firewall > Advanced Settings > Inbound Rules`, sort by *protocol*, and enable these two rules for ICMPv4.
 
 <img src="images/DC_Firewall.png" />
 
