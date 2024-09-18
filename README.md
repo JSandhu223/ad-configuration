@@ -39,10 +39,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 From the Azure portal, we will create two virtual machines. One of these VMs will be the domain controller, which will be running Windows Server 2022. The other VM will be a client that will be used for testing AD, and will run Windows 10 Pro. The virtual machines will be created as follows:
 
 <p float="left">
-  <img src="images/DC_Creation.png" height="70%" width="70%" />
-  <img src="images/Client_Creation.png" height="70%" width="70%" />
+  <img src="images/DC_Creation.png" height="75%" width="75%" />
+  <img src="images/Client_Creation.png" height="75%" width="75%" />
 </p>
 
 Note that when creating the client VM that you put it under the same virtual network as the domain controller!
 
-<img src="images/Client_VirtualNetwork.png" height="70%" width="70%" />
+<img src="images/Client_VirtualNetwork.png" height="75%" width="75%" />
+
+<h3>Step 2 - Configuring Connectivity Between Client and Domain Controller</h3>
+
+If we remote connect into the client and try pinging the domain controller, we'll notice we are unable to reach the domain controller.
+
+<img src="images/Client_FailedPing.png" height="75%" width="75%" />
+
+This is because the domain controller firewall is blocking ICMP traffic. We can log in to the domain controller and simply enable ICMPv4 in the firewall settings. Just navigate to `Control Panel > All Control Panel Items > Windows Defender Firewall > Advanced Settings > Inbound Rules`, sort by protocol, and enable these two rules for ICMPv4.
+
+<img src="images/DC_Firewall.png" />
