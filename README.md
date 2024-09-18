@@ -60,3 +60,7 @@ This is because the domain controller firewall is blocking ICMP traffic. We can 
 Now, if we go back to our client and ping the domain controller, we should see that the ping succeeds.
 
 <img src="images/Client_SuccessfulPing.png" height="75%" width="75%" />
+
+<h3>Step 3 - Install Active Directory</h3>
+
+The a
