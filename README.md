@@ -130,7 +130,7 @@ We will create organizational units named `_EMPLOYEES` and `_ADMINS`. The initia
 Now, we can create a new admin user, who we'll call `jane_admin`. Right click on the `_ADMINS` OU, go to `New -> User`, and create the user as follows:
 
 <p float="left">
-  <img src="images/AD_Create_Admin_1.PNG" height="33%" width="33%" />
-  <img src="images/AD_Create_Admin_2.PNG" height="33%" width="33%" />
-  <img src="images/AD_Create_Admin_3.PNG" height="33%" width="33%" />
+  <img src="images/AD_Create_Admin_1.PNG" height="30%" width="30%" />
+  <img src="images/AD_Create_Admin_2.PNG" height="30%" width="30%" />
+  <img src="images/AD_Create_Admin_3.PNG" height="30%" width="30%" />
 </p>
