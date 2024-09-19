@@ -62,3 +62,46 @@ Now, if we go back to our client and ping the domain controller, we should see t
 <img src="images/Client_SuccessfulPing.png" height="75%" width="75%" />
 
 <h3>Step 3 - Install Active Directory</h3>
+
+In the domain controller, open server manager and click on `Add roles and features`
+
+<img src="images/ServerManager_InstallAD.PNG" height="75%" width="75%" />
+
+Choose the following options in the setup wizard
+
+<img src="images/AD_Installation_1.PNG" height="75%" width="75%" />
+<img src="images/AD_Installation_2.PNG" height="75%" width="75%" />
+
+In the server roles step, select `Active Directory Domain Services`:
+
+<img src="images/AD_Installation_3.PNG" height="75%" width="75%" />
+
+After selecting this, a new windows will pop up. Select `Add Features` and hit next until you reach the confirmation step of the wizard.
+
+<img src="images/AD_Installation_4.PNG" />
+
+On the confirmation step, hit install:
+
+<img src="images/AD_Installation_5.PNG" height="75%" width="75%" />
+
+Once the installer has finished, we will need to promote the VM to an actual domain controller:
+
+<img src="images/AD_Installation_6.PNG" height="75%" width="75%" />
+
+A new wizard will open for setting up Actice Directory Domain Services. We will create a new forest, which we'll call `mydomain.com`:
+
+<img src="images/AD_Installation_7.PNG" height="75%" width="75%" />
+
+Set the options as follows and choose a strong a password for the DSRM:
+
+<img src="images/AD_Installation_8.PNG" height="75%" width="75%" />
+
+We will not create a DNS delegation, so uncheck this option:
+
+<img src="images/AD_Installation_9.PNG" height="75%" width="75%" />
+
+Continue through the wizard until the `Prerequisites check` and click install:
+
+<img src="images/AD_Installation_10.PNG" height="75%" width="75%" />
+
+After the installation wizard is finished, the machine will restart.
