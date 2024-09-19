@@ -108,7 +108,7 @@ After the installation wizard is finished, the machine will restart.
 
 <h3>Step 4 - Creating Users in Active Directory</h3>
 
-First search and open `Active Directory Users and Computers`:
+First open Windows search and click on `Active Directory Users and Computers`:
 
 <img src="images/AD_Users_and_Computers_Search.png" height="75%" width="75%" />
 
@@ -127,4 +127,10 @@ We will create organizational units named `_EMPLOYEES` and `_ADMINS`. The initia
   <img src="images/AD_Users_and_Computers_4.PNG" />
 </p>
 
-These OUs should now appear under our domain name.
+Now, we can create a new admin user, who we'll call `jane_admin`. Right click on the `_ADMINS` OU, go to `New -> User`, and create the user as follows:
+
+<p float="left">
+  <img src="images/AD_Create_Admin_1.PNG" height="33%" width="33%" />
+  <img src="images/AD_Create_Admin_2.PNG" height="33%" width="33%" />
+  <img src="images/AD_Create_Admin_3.PNG" height="33%" width="33%" />
+</p>
