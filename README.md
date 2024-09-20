@@ -114,11 +114,11 @@ First open Windows search and click on `Active Directory Users and Computers`:
 
 Navigate to `mydomain.com`, which is our root domain name:
 
-<img src="images/AD_Users_and_Computers_1.png" height="75%" width="75%" />
+<img src="images/AD_Users_and_Computers_1.PNG" height="75%" width="75%" />
 
 Here, we can organize users into `Organizational Units (OU)` . These can be thought of as folders/containers that hold users, groups, and computers. In our organization, we create OUs for two different types of users: **Employees** and **Admins**. To create these, simply right click on the domain name and go to `New -> Organizational Unit`:
 
-<img src="images/AD_Users_and_Computers_2.png" height="75%" width="75%" />
+<img src="images/AD_Users_and_Computers_2.PNG" height="75%" width="75%" />
 
 We will create organizational units named `_EMPLOYEES` and `_ADMINS`. The initial underscore is a convention used to indicate that these were organizational units manually created rather than being a default created OU.
 
@@ -137,7 +137,7 @@ Now, we can create a new admin user, who we'll call `jane_admin`. Right click on
 
 Next we add this new user to the `Domain Admins` security group. Note that this is a built-in security group. Go to the `_ADMINS` OU and go to the user's properties
 
-<img src="images/AD_Create_Admin_4.PNG" height="60%" width="60%" />
+<img src="images/AD_Create_Admin_4.png" height="60%" width="60%" />
 
 Switch to the `Member of` tab and click `Add`
 
