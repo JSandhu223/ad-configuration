@@ -118,7 +118,7 @@ Navigate to `mydomain.com`, which is our root domain name:
 
 Here, we can organize users into `Organizational Units (OU)` . These can be thought of as folders/containers that hold users, groups, and computers. In our organization, we create OUs for two different types of users: **Employees** and **Admins**. To create these, simply right click on the domain name and go to `New -> Organizational Unit`:
 
-<img src="images/AD_Users_and_Computers_2.PNG" height="75%" width="75%" />
+<img src="images/AD_Users_and_Computers_2.png" height="75%" width="75%" />
 
 We will create organizational units named `_EMPLOYEES` and `_ADMINS`. The initial underscore is a convention used to indicate that these were organizational units manually created rather than being a default created OU.
 
