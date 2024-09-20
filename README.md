@@ -190,3 +190,13 @@ Once you submit the credentials, you will get the following prompt confirming th
 To finalize these changes, you must restart the client machine.
 
 <img src="images/Client_JoinDomain_7.png" />
+
+To confirm that the client is in the domain, we can check check the `Computers` container of AD in the domain controller VM.
+
+<img src="images/AD_Computers_Container.png" />
+
+Optionally, we can organize all our client machines into their own OU. Let's create an OU called `_CLIENTS`. Then we can drag `Client-1` into this OU.
+
+<img src="images/AD_Clients_OU.PNG" />
+
+<h3>Step 6 - Allow Remote Desktop</h3>
