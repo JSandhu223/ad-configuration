@@ -193,7 +193,7 @@ To finalize these changes, you must restart the client machine.
 
 To confirm that the client is in the domain, we can check check the `Computers` container of AD in the domain controller VM.
 
-<img src="images/AD_Computers_Container.png" />
+<img src="images/AD_Computers_Container.PNG" />
 
 Optionally, we can organize all our client machines into their own OU. Let's create an OU called `_CLIENTS`. Then we can drag `Client-1` into this OU.
 
