@@ -166,3 +166,27 @@ After saving, restart the client VM:
 Now, we log into the client VM and join it to the domain. In file explorer, right click on `This PC` and click on `Properties`.
 
 <img src="images/Client_JoinDomain_1.png" height="75%" width="75%" />
+
+Then click on `Rename this PC` to open up the System Properties window.
+
+<img src="images/Client_JoinDomain_2.png" height="75%" width="75%" />
+
+Click on `Change`.
+
+<img src="images/Client_JoinDomain_3.png" />
+
+Under the `Member of` seciton, select `Domain` and enter our domain name in the field.
+
+<img src="images/Client_JoinDomain_4.png" />
+
+After applying this change, you will get a prompt to enter a domain admin's credentials. We can use our `jane_admin` user we created earlier.
+
+<img src="images/Client_JoinDomain_5.png" />
+
+Once you submit the credentials, you will get the following prompt confirming the machine is now part of the domain.
+
+<img src="images/Client_JoinDomain_6.png" />
+
+To finalize these changes, you must restart the client machine.
+
+<img src="images/Client_JoinDomain_7.png" />
