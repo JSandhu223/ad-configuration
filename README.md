@@ -134,3 +134,35 @@ Now, we can create a new admin user, who we'll call `jane_admin`. Right click on
   <img src="images/AD_Create_Admin_2.PNG" height="30%" width="30%" />
   <img src="images/AD_Create_Admin_3.PNG" height="30%" width="30%" />
 </p>
+
+Next we add this new user to the `Domain Admins` security group. Note that this is a built-in security group. Go to the `_ADMINS` OU and go to the user's properties
+
+<img src="images/AD_Create_Admin_4.PNG" height="60%" width="60%" />
+
+Switch to the `Member of` tab and click `Add`
+
+<img src="images/AD_Create_Admin_5.PNG" />
+
+From here, we simply type `Domain Admins` groups and click `Check Names`.
+
+<img src="images/AD_Create_Admin_6.PNG" />
+
+We can confirm this all worked by logging out and logging back in to our domain controller VM with the username as `mydomain.com\jane_admin`.
+
+<h3>Step 5 - Join the Client to the Domain</h3>
+
+To join the client VM to the domain, we need to change its DNS server to that of the domain controller VM. That is, change it to the private IP address of the domain controller VM. To do so, navigate to the virtual machine in the Azure portal and go to network settings. From there, click on the network interface:
+
+<img src="images/Client_NetworkSettings.png" height="75%" width="75%" />
+
+From there, navigate to DNS settings, click custom, and enter the private IP address of the domain controller:
+
+<img src="images/Client_DNS.png" height="75%" width="75%" />
+
+After saving, restart the client VM:
+
+<img src="images/Client_Restart.png" height="75%" width="75%" />
+
+Now, we log into the client VM and join it to the domain. In file explorer, right click on `This PC` and click on `Properties`.
+
+<img src="images/Client_JoinDomain_1.png" height="75%" width="75%" />
