@@ -228,8 +228,8 @@ This script will create 1000 users in the `_EMPLOYEES` OU with the password as `
 
 <img src="images/AD_Created_Users.PNG" />
 
-Let's try to log in to the client with one of these users with the password as `Password1`.
+Let's try to log in to the client with one of these users with the password as `Password1`. If all is successful, you should be logged in as the new user.
 
 <img src="images/Client_RandomUserLogin.png" />
 
-If all is successful, you should be logged in as the new user.
+Congratulations! You have now configured Active Directory!
