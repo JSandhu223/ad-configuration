@@ -219,3 +219,17 @@ We will allow `Domain Users` remote desktop access to the client.
 Now, we can log into our client as a normal user.
 
 <h3>Step 7 - Creating Users</h3>
+
+Let's head back to the domain controller as `jane_admin` to create users. We could manually create the users, but that would take too long. Instead we can use a PowerShell script. First, open `Windows PowerShell ISE` as administrator, click `New Script`, paste the code from `create_users.ps1`, and hit `F5` to run the script.
+
+<img src="images/PowerShell_Script.PNG" height="75%" width="75%" />
+
+This script will create 1000 users in the `_EMPLOYEES` OU with the password as `Password1`. Once the script has finished executing, we can refresh the OU and see the employees that were created. Of course, your created users will have different names as the names were created using a pseudo-random algorithm.
+
+<img src="images/AD_Created_Users.PNG" />
+
+Let's try to log in to the client with one of these users with the password as `Password1`.
+
+<img src="images/Client_RandomUserLogin.png" />
+
+If all is successful, you should be logged in as the new user.
