@@ -200,3 +200,22 @@ Optionally, we can organize all our client machines into their own OU. Let's cre
 <img src="images/AD_Clients_OU.PNG" />
 
 <h3>Step 6 - Allow Remote Desktop</h3>
+
+If we want to allow any non-administrative user to log into the client VM, we need to enable Remote Desktop in the client VM. Now that the client is part of the domain, we can access it by logging in as `mydomain.com\jane_admin`. After logging in, navigate to the system properties and click on `Remote desktop`
+
+<img src="images/Client_EnableRemoteDesktop_1.png" height="75%" width="75%" />
+
+Then we want to select which users can connect to this PC; that is, which users can log into the client with their credentials.
+
+<img src="images/Client_EnableRemoteDesktop_2.png" height="75%" width="75%" />
+
+We will allow `Domain Users` remote desktop access to the client.
+
+<p float="left">
+  <img src="images/Client_EnableRemoteDesktop_3.png" />
+  <img src="images/Client_EnableRemoteDesktop_4.png" />
+</p>
+
+Now, we can log into our client as a normal user.
+
+<h3>Step 7 - Creating Users</h3>
