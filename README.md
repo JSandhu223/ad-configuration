@@ -232,4 +232,4 @@ Let's try to log in to the client with one of these users with the password as `
 
 <img src="images/Client_RandomUserLogin.png" />
 
-Congratulations! You have now configured Active Directory!
+Congratulations! You have now configured Active Directory! As an admin, you can manage user permissions, reset passwords, disable accounts, add new users, delete a user, etc. As a user of the organization, you can log into any client VM that is part of the domain (in our case, we have just the Client-1 VM).
